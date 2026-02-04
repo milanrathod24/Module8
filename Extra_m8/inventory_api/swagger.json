@@ -1,0 +1,62 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Inventory Management API",
+    "version": "1.0.0",
+    "description": "RESTful API for managing inventory items"
+  },
+  "paths": {
+    "/inventory": {
+      "get": {
+        "summary": "Get all inventory items",
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          }
+        }
+      },
+      "post": {
+        "summary": "Add new inventory item",
+        "responses": {
+          "201": {
+            "description": "Item created"
+          }
+        }
+      }
+    },
+    "/inventory/{id}": {
+      "get": {
+        "summary": "Get inventory item by ID",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": { "type": "integer" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Item found"
+          }
+        }
+      },
+      "put": {
+        "summary": "Update inventory item",
+        "responses": {
+          "200": {
+            "description": "Item updated"
+          }
+        }
+      },
+      "delete": {
+        "summary": "Delete inventory item",
+        "responses": {
+          "200": {
+            "description": "Item deleted"
+          }
+        }
+      }
+    }
+  }
+}

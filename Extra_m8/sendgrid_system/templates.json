@@ -1,0 +1,10 @@
+{
+  "order_confirmation": {
+    "subject": "Order Confirmation",
+    "body": "Hello {{name}}, your order has been confirmed successfully!"
+  },
+  "newsletter": {
+    "subject": "Monthly Newsletter",
+    "body": "Hello {{name}}, welcome to our newsletter update!"
+  }
+}
